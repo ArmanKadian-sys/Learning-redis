@@ -5,7 +5,9 @@ const app = express();
 const redis = new Redis(process.env.REDIS_URL || 'redis://localhost:6379');
 
 
-const BANNER_KEY="arman_redis_banner";
+const generateOtpKey=(phone)=>{
+  return "otp:"+phone;
+}
 
 
 app.use(express.json());
