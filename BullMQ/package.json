@@ -1,0 +1,21 @@
+{
+  "name": "redis",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "api": "node src/api.js",
+    "worker": "node src/worker.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bullmq": "^5.77.6",
+    "express": "^5.2.1",
+    "ioredis": "^5.11.0",
+    "mongoose": "^9.6.3"
+  }
+}
